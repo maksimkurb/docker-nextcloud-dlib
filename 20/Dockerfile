@@ -1,7 +1,7 @@
 #
 # Use a temporary image to compile and test the libraries
 #
-FROM nextcloud:19 as builder
+FROM nextcloud:20 as builder
 
 # Build and install dlib on builder
 
@@ -50,7 +50,7 @@ RUN git clone https://github.com/matiasdelellis/pdlib-min-test-suite.git \
 #
 
 FROM node:latest AS node
-FROM nextcloud:19
+FROM nextcloud:20
 
 # Install dependencies to image
 
